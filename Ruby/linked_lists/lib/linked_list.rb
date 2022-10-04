@@ -61,7 +61,7 @@ class LinkedList
   end
 
   # returns true if the value is in the list else returns false
-  def contains(value)
+  def contains?(value)
     curr_node = @head
     until curr_node.nil?
       return true if curr_node.data == value
