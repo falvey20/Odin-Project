@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+# tic tac toe/Gemfile
+
+source 'https://rubygems.org'
