@@ -1,56 +1,58 @@
-binary_search_trees
-The Binary Search Tree Data Structure Has The Following Methods:
-#build_tree - Takes an array of data and turns it into a balanced binary tree.
+# balanced_binary_search_trees
 
-#insert - Takes a value and inserts it into the tree.
+## The Binary Search Tree Data Structure Has The Following Methods:
 
-#delete - Takes a value and deletes it from the tree if it's already in the tree.
+build_tree - Takes an array of data and turns it into a balanced binary tree.
 
-#find - Takes a value and returns the node with the given value.
+insert - Takes a value and inserts it into the tree.
 
-#find_parent - Takes a value and returns the parent of the given node.
+delete - Takes a value and deletes it from the tree if it's already in the tree.
 
-#find_last_left - Takes a value and returns the left most element of the given node branch / subtree.
+find - Takes a value and returns the node with the given value.
 
-#maximum - Finds the maximum node value from the tree.
+find_parent - Takes a value and returns the parent of the given node.
 
-#minimum - Finds the minimum node value from the tree.
+find_last_left - Takes a value and returns the left most element of the given node branch / subtree.
 
-#successor - Finds the inorder successor of the given node.
+maximum - Finds the maximum node value from the tree.
 
-#level_order - Prints all the values in level order by using iteration. Can be used with block too.
+minimum - Finds the minimum node value from the tree.
 
-#level_order_recursive - Prints all the values in level order by using recursion. Can be used with block too.
+successor - Finds the inorder successor of the given node.
 
-#inorder - Prints all the values in inorder. Can be used with block too.
+level_order - Prints all the values in level order by using iteration. Can be used with block too.
 
-#preorder - Prints all the values in preorder. Can be used with block too.
+level_order_recursive - Prints all the values in level order by using recursion. Can be used with block too.
 
-#postorder - Prints all the values in postorder. Can be used with block too.
+inorder - Prints all the values in inorder. Can be used with block too.
 
-#height - Accepts a node (optinal: value) and returns the height of the given node.
+preorder - Prints all the values in preorder. Can be used with block too.
 
-#depth - Accepts a node (optinal: value) and returns the depth of the given node.
+postorder - Prints all the values in postorder. Can be used with block too.
 
-#balanced? - Checks if the tree is balanced.
+height - Accepts a node (optinal: value) and returns the height of the given node.
 
-#rebalance - Creates a new balanced tree.
+depth - Accepts a node (optinal: value) and returns the depth of the given node.
 
-#rebalance! - Rebalances the current tree.
+balanced? - Checks if the tree is balanced.
 
-main_script.rb does the following:
-Creates a binary search tree from an array of random numbers (Array.new(15) { rand(1..100) }).
+rebalance - Creates a new balanced tree.
 
-Confirms that the tree is balanced by calling #balanced?.
+rebalance! - Rebalances the current tree.
 
-Prints out all elements in level, pre, post, and in order.
+## main.rb does the following:
+1. Creates a binary search tree from an array of random numbers (Array.new(15) { rand(1..100) }).
 
-Unbalances the tree by adding several numbers > 100.
+2. Confirms that the tree is balanced by calling #balanced?.
 
-Confirms that the tree is unbalanced by calling #balanced?.
+3. Prints out all elements in level, pre, post, and in order.
 
-Balances the tree by calling #rebalance.
+4. Unbalances the tree by adding several numbers > 100.
 
-Confirms that the tree is balanced by calling #balanced?.
+5. Confirms that the tree is unbalanced by calling #balanced?.
 
-Prints out all elements in level, pre, post, and in order.
+6. Balances the tree by calling #rebalance!.
+
+7. Confirms that the tree is balanced by calling #balanced?.
+
+8. Prints out all elements in level, pre, post, and in order.
