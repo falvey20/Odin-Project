@@ -171,7 +171,7 @@ class Tree
   end
 
   # create a new balanced tree
-  def rebalance(_noe = @root)
+  def rebalance(node = @root)
     arr = inorder(node)
     Tree.new(arr)
   end
