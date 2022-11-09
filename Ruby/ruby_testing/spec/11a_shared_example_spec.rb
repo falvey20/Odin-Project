@@ -37,3 +37,4 @@ RSpec.shared_examples 'shared method name' do
     end
   end
 end
+

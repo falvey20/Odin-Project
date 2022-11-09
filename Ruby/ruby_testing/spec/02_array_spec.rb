@@ -72,28 +72,29 @@ end
 describe Array do
   context 'when updating an implicit subject' do
     # remove the 'x' before running this test
-    xit 'is empty' do
-      # Write a test to expect the subject to be empty.
+    it 'is empty' do
+      expect(subject).to be_empty
     end
 
     # remove the 'x' before running this test
-    xit 'updates length to 1' do
+    it 'updates length to 1' do
       # Update the implicit subject to make this test pass.
+      subject.push(8)
       expect(subject.length).to eq(1)
     end
   end
 
   context 'when using one let variable on two tests' do
     # Make a let variable that will pass both tests.
-
+    let(:numbers) { [8, 22, 12] }
     # remove the 'x' before running this test
-    xit 'has length of 3' do
-      expect(lucky_numbers.length).to eq(3)
+    it 'has length of 3' do
+      expect(numbers.length).to eq(3)
     end
 
     # remove the 'x' before running this test
-    xit 'has sum of 42' do
-      expect(lucky_numbers.sum).to eq(42)
+    it 'has sum of 42' do
+      expect(numbers.sum).to eq(42)
     end
   end
 end

@@ -144,6 +144,7 @@ describe BinarySearch do
       end
     end
 
+    
     context 'when the guess is 7, with min=5 and max=8' do
       subject(:eight_game) { described_class.new(5, 8, range_number, 7) }
 
@@ -163,3 +164,4 @@ describe BinarySearch do
     end
   end
 end
+
